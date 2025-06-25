@@ -50,8 +50,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "TypeScript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Java", "SpringBoot", "ReactJS"];
+  const rightLists = ["Python", "NextJS", "MongoDB"];
 
   const [copied, setCopied] = useState(false);
   const [hasMounted, setHasMounted] = useState(false); // ✅ Fix here
