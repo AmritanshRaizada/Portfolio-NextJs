@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I design scalable apps, promoting clean code and open teamwork.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "AI-driven developer passionate about full stack builds.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building an API MARKETPLACE",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -59,7 +59,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Want to build something together? Let’s connect!",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -68,41 +68,98 @@ export const gridItems = [
     spareImg: "",
   },
 ];
+export const exp = [
+ {
+  id: 1,
+  title: "PurpleRain TechSafe",
+  sub: "Full-Stack Developer Intern",
+  des: "Developed and deployed 5+ Dockerized Flask microservices for real-time threat detection and device monitoring. Managed Supabase-based auth, CI pipelines, and a Vercel-hosted Next.js dashboard for secure infrastructure used by 3+ SMBs.",
+  img: "/purple.png",
+  iconLists: [
+    "/python.svg",
+    "/docker.svg",
+    "/supabase.svg",
+    "/cloudflare.svg",
+    
+  ],
+  link: "https://PurpleRain.tech"
+},
+{
+  id: 2,
+  title: "Vision and Solutions",
+  sub: "Backend Developer Intern",
+  des: "Built and launched the main website and SEO-optimized blog system using HTML, CSS, React, and JavaScript. Increased traffic by 2× and leads by 40% through performance-focused UI and blog integration.",
+  img: "/vision.png",
+  iconLists: [
+    "/html.svg",
+    "/css.svg",
+    "/js.svg",
+    "/re.svg",
+    
+  ],
+  link: "https://visionandsolutions.com/"
+}
+
+]
 
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "ReS.io ",
+    sub:"GPT-Powered Resume Analyzer",
+    des: "Built an AI web app that analyzes resumes using OCR + NLP and provides GPT-powered feedback tailored to job descriptions.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
-  },
-  {
-    id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
-  },
+    iconLists: ["/python.svg", "/openai.svg", "/html.svg", "/js.svg"],
+    link: "https://blog-typescript-react.vercel.app",
+  }
+,
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "UserHub API ",
+    sub:"Dockerized User Management API",
+    des: "Developed a secure, containerized user management REST API with MongoDB, validation, and clean architecture.",
+    img: "/p2.svg",
+    iconLists: ["/python.svg", "/docker.svg", "/mongo.svg","/postman.svg"],
+    link: "https://userhub-api.onrender.com/users",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "EnvieEats",
+    sub:"Live Food Discovery App",
+    des: "Swiggy-inspired app with live restaurant data, filters, and search built with React, Express, and deployed on Vercel/Render.",
+    img: "/p4.png",
+    iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/postman.svg"],
+    link: "https://envie-eats.vercel.app",
+  },
+  {
+  id: 5,
+  title: "Sundown Studio",
+  sub: "Scroll-Animated Web Experience",
+  des: "Built a creative, scroll-animated landing page with GSAP and Locomotive Scroll — delivering a smooth, responsive, interactive user journey.",
+  img: "/sundown.png",
+  iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+  link: "https://sundown-studio-bay.vercel.app"
+},
+{
+  id: 6,
+  title: "Lazarev Studio",
+  sub: "Scroll-Triggered Portfolio Website",
+  des: "Developed a visually rich animated site mimicking Lazarev Agency’s UI using pure HTML, CSS, and JavaScript for maximum performance and cross-device UX.",
+  img: "/laz.png",
+  iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+  link: "https://amritanshraizada.github.io/Lazerev/"
+},
+  {
+    id: 7,
+    title: "BlogBliss",
+    sub:"Blog Management System",
+    des: "Built a full blog dashboard during internship at Vision & Solutions with Supabase auth, CRUD, and rich publishing tools.",
+    img: "/p6.png",
+    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/supabase.svg", "/vite.svg"],
+    link: "https://www.visionandsolutions.com/blog",
   },
 ];
+
 
 export const testimonials = [
   {
@@ -173,32 +230,33 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full-Stack Web Developer",
+    desc: "Delivered end-to-end full-stack solutions using React, Flask, PostgreSQL, and Supabase, deployed via Docker on secure Debian servers.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Backend Developer",
+    desc: "Engineered secure, JWT-authenticated Flask microservices with PostgreSQL and centralized logging, reducing system response time by 50%.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "DevOps Engineer (Entry-Level)",
+    desc: "Automated CI/CD pipelines using GitHub Actions, Docker modularization, and Cloudflare Tunnel to streamline deployments and ensure secure service delivery.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Cloud & Security Automation Engineer (Junior)",
+    desc: "Deployed Dockerized microservices with WireGuard VPN and Cloudflare Tunnel, automating secure cloud infrastructure for real-time cybersecurity systems.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
+  
 ];
 
 export const socialMedia = [
