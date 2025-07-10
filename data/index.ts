@@ -108,7 +108,7 @@ export const projects = [
     title: "ReS.io ",
     sub:"GPT-Powered Resume Analyzer",
     des: "Built an AI web app that analyzes resumes using OCR + NLP and provides GPT-powered feedback tailored to job descriptions.",
-    img: "/p1.svg",
+    img: "/res.png",
     iconLists: ["/python.svg", "/openai.svg", "/html.svg", "/js.svg"],
     link: "https://blog-typescript-react.vercel.app",
   }
