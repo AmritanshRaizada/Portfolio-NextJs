@@ -263,13 +263,19 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    alt: "GitHub",
+    link: "https://github.com/AmritanshRaizada",
   },
   {
     id: 2,
     img: "/twit.svg",
+    alt: "Twitter",
+    link: "https://twitter.com", // Update if you have a real Twitter
   },
   {
     id: 3,
     img: "/link.svg",
+    alt: "LinkedIn",
+    link: "https://www.linkedin.com/in/amritansh-raizada-a69306248/",
   },
 ];
