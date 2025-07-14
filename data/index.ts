@@ -110,7 +110,7 @@ export const projects = [
     des: "Built an AI web app that analyzes resumes using OCR + NLP and provides GPT-powered feedback tailored to job descriptions.",
     img: "/res.png",
     iconLists: ["/python.svg", "/openai.svg", "/html.svg", "/js.svg"],
-    link: "https://blog-typescript-react.vercel.app",
+    link: "https://resio-production.up.railway.app/",
   }
 ,
   {
