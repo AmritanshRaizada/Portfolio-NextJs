@@ -2,7 +2,6 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import ProfileCard from "./ProfileCard"; // Ensure correct path
 
 const Hero = () => {
   const techStack = [
@@ -22,10 +21,9 @@ const Hero = () => {
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git", glow: "group-hover:drop-shadow-[0_0_8px_rgba(240,80,50,0.6)]" },
   ];
 
-
   return (
-    <div className="pb-20 pt-36 relative">
-      {/* Spotlight Effects */}
+    <div className="pb-20 pt-36">
+      {/* Spotlight Background Effects */}
       <div>
         <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
         <Spotlight className="h-[80vh] w-[50vw] top-10 left-full" fill="purple" />
@@ -37,38 +35,43 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      {/* Hero Content */}
-      <div className="relative z-10 my-16 max-w-[95vw] mx-auto flex flex-col lg:flex-row items-center justify-center gap-12">
-        
-        {/* Left Side: Intro & Marquee */}
-        <div className="flex flex-col items-center justify-center max-w-3xl text-center lg:text-left">
-          <p className="uppercase tracking-widest text-xs text-blue-100 max-w-80 mx-auto">
+      {/* Main Content */}
+      <div className="flex justify-center relative my-16 z-10">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             SCALABLE • SECURE • WEB SOLUTIONS
           </p>
 
           <TextGenerateEffect
             words="Amritansh Raizada"
-            className="text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            <span className="text-purple">Next.js</span>
-            <span className="text-white dark:text-gray-300"> • </span>
-            <span className="text-purple">Flask</span>
-            <span className="text-white dark:text-gray-300"> • </span>
-            <span className="text-purple">Supabase</span>
-            <span className="text-white dark:text-gray-300"> • </span>
-            <span className="text-purple">Docker</span>
-          </p>
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+  <span className="text-purple">Next.js</span>
+  <span className="text-white dark:text-gray-300"> • </span>
+  <span className="text-purple">Flask</span>
+  <span className="text-white dark:text-gray-300"> • </span>
+  <span className="text-purple">Supabase</span>
+  <span className="text-white dark:text-gray-300"> • </span>
+  <span className="text-purple">Docker</span>
+</p>
 
-          {/* Tech Stack Marquee */}
+          {/* Marquee Component */}
           <div className="relative w-full max-w-4xl overflow-hidden py-4 h-32">
+            {/* Gradient Fade Effects */}
             <div className="absolute left-0 top-0 bottom-0 w-20 z-20 bg-gradient-to-r from-white dark:from-black-100 to-transparent pointer-events-none" />
             <div className="absolute right-0 top-0 bottom-0 w-20 z-20 bg-gradient-to-l from-white dark:from-black-100 to-transparent pointer-events-none" />
+            
+            {/* Marquee Track */}
             <div className="flex h-full items-center">
+              {/* Marquee Content - Double Set for Seamless Loop */}
               <div className="flex animate-marquee items-center gap-8 whitespace-nowrap">
                 {[...techStack, ...techStack].map((icon, index) => (
-                  <div key={`icon-${index}`} className="relative group transition-all duration-300 hover:scale-125 hover:-translate-y-3 flex-shrink-0">
+                  <div
+                    key={`icon-${index}`}
+                    className="relative group transition-all duration-300 hover:scale-125 hover:-translate-y-3 flex-shrink-0"
+                  >
                     <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <img
                       src={icon.src}
@@ -92,25 +95,9 @@ const Hero = () => {
             />
           </a>
         </div>
-
-        {/* Right Side: Profile Card */}
-        <div className="flex-shrink-0">
-          <ProfileCard
-            name="Amritansh Raizada"
-            title="Full Stack AI Developer"
-            handle="amritanshraizada"
-            status="Open to Work"
-            contactText="Hire Me"
-            avatarUrl="/avatar.jpg"
-            miniAvatarUrl="/avatar.jpg"
-            enableTilt={true}
-            showUserInfo={true}
-            onContactClick={() => console.log("Contact clicked")}
-          />
-        </div>
       </div>
 
-      {/* Global Marquee Animation */}
+      {/* Marquee Animation Styles */}
       <style jsx global>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
