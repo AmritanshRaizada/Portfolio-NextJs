@@ -106,58 +106,63 @@ export const projects = [
   {
     id: 1,
     title: "ReS.io ",
-    sub:"GPT-Powered Resume Analyzer",
+    sub: "GPT-Powered Resume Analyzer",
     des: "Built an AI web app that analyzes resumes using OCR + NLP and provides GPT-powered feedback tailored to job descriptions.",
     img: "/res.png",
     iconLists: ["/python.svg", "/openai.svg", "/html.svg", "/js.svg"],
     link: "https://resio-production.up.railway.app/",
-  }
-,
+    github: "https://github.com/AmritanshRaizada/Res.IO"
+  },
   {
     id: 3,
     title: "UserHub API ",
-    sub:"Dockerized User Management API",
+    sub: "Dockerized User Management API",
     des: "Developed a secure, containerized user management REST API with MongoDB, validation, and clean architecture.",
     img: "/p2.svg",
-    iconLists: ["/python.svg", "/docker.svg", "/mongo.svg","/postman.svg"],
+    iconLists: ["/python.svg", "/docker.svg", "/mongo.svg", "/postman.svg"],
     link: "https://userhub-api.onrender.com/users",
+    github: "https://github.com/AmritanshRaizada/UserHub-API"
   },
   {
     id: 4,
     title: "EnvieEats",
-    sub:"Live Food Discovery App",
+    sub: "Live Food Discovery App",
     des: "Swiggy-inspired app with live restaurant data, filters, and search built with React, Express, and deployed on Vercel/Render.",
     img: "/p4.png",
     iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/postman.svg"],
     link: "https://envie-eats.vercel.app",
+    github: "https://github.com/AmritanshRaizada/EnvieEats"
   },
   {
-  id: 5,
-  title: "Sundown Studio",
-  sub: "Scroll-Animated Web Experience",
-  des: "Built a creative, scroll-animated landing page with GSAP and Locomotive Scroll — delivering a smooth, responsive, interactive user journey.",
-  img: "/sundown.png",
-  iconLists: ["/html.svg", "/css.svg", "/js.svg"],
-  link: "https://sundown-studio-bay.vercel.app"
-},
-{
-  id: 6,
-  title: "Lazarev Studio",
-  sub: "Scroll-Triggered Portfolio Website",
-  des: "Developed a visually rich animated site mimicking Lazarev Agency’s UI using pure HTML, CSS, and JavaScript for maximum performance and cross-device UX.",
-  img: "/laz.png",
-  iconLists: ["/html.svg", "/css.svg", "/js.svg"],
-  link: "https://amritanshraizada.github.io/Lazerev/"
-},
+    id: 5,
+    title: "Sundown Studio",
+    sub: "Scroll-Animated Web Experience",
+    des: "Built a creative, scroll-animated landing page with GSAP and Locomotive Scroll — delivering a smooth, responsive, interactive user journey.",
+    img: "/sundown.png",
+    iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+    link: "https://sundown-studio-bay.vercel.app",
+    github: "https://github.com/AmritanshRaizada/Sundown-Studio"
+  },
+  {
+    id: 6,
+    title: "Lazarev Studio",
+    sub: "Scroll-Triggered Portfolio Website",
+    des: "Developed a visually rich animated site mimicking Lazarev Agency’s UI using pure HTML, CSS, and JavaScript for maximum performance and cross-device UX.",
+    img: "/laz.png",
+    iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+    link: "https://amritanshraizada.github.io/Lazerev/",
+    github: "https://github.com/AmritanshRaizada/Lazerev"
+  },
   {
     id: 7,
     title: "BlogBliss",
-    sub:"Blog Management System",
+    sub: "Blog Management System",
     des: "Built a full blog dashboard during internship at Vision & Solutions with Supabase auth, CRUD, and rich publishing tools.",
     img: "/p6.png",
-    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/supabase.svg", "/vite.svg"],
+    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/supabase.svg"],
     link: "https://www.visionandsolutions.com/blog",
-  },
+    github: "https://github.com/AmritanshRaizada/BLOG_TYPESCRIPT_REACT"
+  }
 ];
 
 

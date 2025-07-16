@@ -1,7 +1,7 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
+import { FaGithub } from "react-icons/fa"; // Import GitHub icon
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
@@ -19,8 +19,9 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              title="https://twitter.com/mannupaaji"
-              href="https://twitter.com/mannupaaji"
+              title="My GitHub Profile"
+              href="https://github.com/amritanshRaizada"
+              containerClassName="pointer-events-auto"
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
@@ -38,11 +39,9 @@ const RecentProjects = () => {
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {item.title}
-                
               </h1>
               <p
                 className="lg:text-base lg:font-normal font-light text-[10px] line-clamp-2"
-
                 style={{
                   color: "#BEC1DD",
                   margin: "0.1vh 0",
@@ -53,7 +52,6 @@ const RecentProjects = () => {
 
               <p
                 className="lg:text-base lg:font-normal font-light text-[10px] line-clamp-2"
-
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -77,17 +75,30 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center gap-3">
+                  {/* Live Site Link */}
                   <a
-  href={item.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center lg:text-xl md:text-xs text-sm text-purple hover:underline"
->
-  Check Live Site
-  <FaLocationArrow className="ms-3" color="#CBACF9" />
-</a>
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center lg:text-xl md:text-xs text-sm text-purple hover:underline"
+                  >
+                    Check Live Site
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </a>
 
+                  {/* GitHub Link */}
+                  {item.github && (
+                    <a
+                      href={item.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple hover:text-white transition-colors"
+                      title="View on GitHub"
+                    >
+                      <FaGithub className="w-6 h-6" />
+                    </a>
+                  )}
                 </div>
               </div>
             </PinContainer>

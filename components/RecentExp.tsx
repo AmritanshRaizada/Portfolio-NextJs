@@ -18,10 +18,11 @@ const RecentExp = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            <PinContainer
-              title="https://twitter.com/mannupaaji"
-              href="https://twitter.com/mannupaaji"
-            >
+ <PinContainer
+  title="Connect on LinkedIn"
+  href="https://www.linkedin.com/in/amritansh-raizada-a69306248/"
+  containerClassName="pointer-events-auto"
+>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
