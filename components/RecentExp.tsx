@@ -7,7 +7,7 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentExp = () => {
   return (
-    <div className="py-20">
+    <section className="py-20">
       <h1 className="heading">
         My{" "}
         <span className="text-purple">Experiences</span>
@@ -38,11 +38,9 @@ const RecentExp = () => {
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {item.title}
-                
               </h1>
               <p
                 className="lg:text-base lg:font-normal font-light text-[10px] line-clamp-2"
-
                 style={{
                   color: "#BEC1DD",
                   margin: "0.1vh 0",
@@ -52,8 +50,7 @@ const RecentExp = () => {
               </p>
 
               <p
-                className="lg:text-base lg:font-normal font-light text-[10px] line-clamp-2"
-
+                className="lg:text-base lg:font-normal font-light text-[10px]"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -79,22 +76,21 @@ const RecentExp = () => {
 
                 <div className="flex justify-center items-center">
                   <a
-  href={item.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center lg:text-xl md:text-xs text-sm text-purple hover:underline"
->
-  Check Live Site
-  <FaLocationArrow className="ms-3" color="#CBACF9" />
-</a>
-
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center lg:text-xl md:text-xs text-sm text-purple hover:underline"
+                  >
+                    Check Live Site
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </a>
                 </div>
               </div>
             </PinContainer>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
