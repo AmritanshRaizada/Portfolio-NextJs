@@ -69,8 +69,23 @@ export const gridItems = [
   },
 ];
 export const exp = [
+  {
+    id: 1,
+    title: "Xenara AI",
+    sub: "Full Stack AI Developer",
+    des: "XENARA AI is an AI automation company that develops autonomous AI agents for customer support, operations, and engagement. Their 'synthetically trained and symbolically steered' agents handle 24/7 multichannel support through chat, email, and WhatsApp, integrating with helpdesk platforms like Zendesk, Intercom, and HubSpot.",
+    img: "/xenara.png",
+    iconLists: [
+      "/re.svg",
+      "/ts.svg",
+      "/tail.svg",
+      "/supabase.svg",
+      "/docker.svg",
+    ],
+    link: "https://www.xenara.ai",
+  },
  {
-  id: 1,
+  id: 2,
   title: "PurpleRain TechSafe",
   sub: "Full-Stack Developer Intern",
   des: "Developed and deployed 5+ Dockerized Flask microservices for real-time threat detection and device monitoring. Managed Supabase-based auth, CI pipelines, and a Vercel-hosted Next.js dashboard for secure infrastructure used by 3+ SMBs.",
@@ -85,7 +100,7 @@ export const exp = [
   link: "https://PurpleRain.tech"
 },
 {
-  id: 2,
+  id: 3,
   title: "Vision and Solutions",
   sub: "Backend Developer Intern",
   des: "Built and launched the main website and SEO-optimized blog system using HTML, CSS, React, and JavaScript. Increased traffic by 2× and leads by 40% through performance-focused UI and blog integration.",
@@ -160,7 +175,7 @@ export const projects = [
     des: "Built a full blog dashboard during internship at Vision & Solutions with Supabase auth, CRUD, and rich publishing tools.",
     img: "/p6.png",
     iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/supabase.svg"],
-    link: "https://www.visionandsolutions.com/blog",
+    link: "https://blog.visionandsolutions.com/",
     github: "https://github.com/AmritanshRaizada/BLOG_TYPESCRIPT_REACT"
   }
 ];
