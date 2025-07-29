@@ -1,18 +1,21 @@
 "use client";
 
+import { useState } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { exp } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
 const RecentExp = () => {
+  const [expanded, setExpanded] = useState<number | null>(null);
+
   return (
     <section className="py-20" id="experience">
       <h1 className="heading">
         My{" "}
         <span className="text-purple">Experiences</span>
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-10 p-4">
         {exp.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center"
@@ -51,7 +54,9 @@ const RecentExp = () => {
               </p>
 
               <p
-                className="lg:text-base lg:font-normal font-light text-[10px]"
+                className={`lg:text-base lg:font-normal font-light text-[10px] ${
+                  expanded === item.id ? "" : "line-clamp-4"
+                }`}
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -59,6 +64,14 @@ const RecentExp = () => {
               >
                 {item.des}
               </p>
+              <button
+                className="text-purple text-sm"
+                onClick={() =>
+                  setExpanded(expanded === item.id ? null : item.id)
+                }
+              >
+                {expanded === item.id ? "Read less" : "Read more"}
+              </button>
 
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
