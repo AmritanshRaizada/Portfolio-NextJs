@@ -12,10 +12,10 @@ const RecentExp = () => {
         My{" "}
         <span className="text-purple">Experiences</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-10">
         {exp.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center"
             key={item.id}
           >
  <PinContainer
